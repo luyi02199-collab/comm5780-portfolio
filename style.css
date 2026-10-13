@@ -162,3 +162,96 @@ footer {
     padding-bottom: 50px;
   }
 }
+
+
+/* ===== Stella's illustrated magazine homepage ===== */
+
+.hero {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 36px;
+  padding: 55px 6%;
+  background: #F2E6D5;
+}
+
+.hero-copy {
+  padding: 20px 0;
+}
+
+.hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(38px, 5vw, 68px);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.hero h1 em {
+  color: #C94E59;
+  font-weight: 400;
+}
+
+.hero .eyebrow {
+  color: #C94E59;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.hero .intro {
+  max-width: 440px;
+  color: #61574C;
+  line-height: 1.8;
+}
+
+.hero-art {
+  padding: 12px;
+  background: #D5E3DC;
+  transform: rotate(1deg);
+}
+
+.hero-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 590px;
+  object-fit: cover;
+}
+
+.art-note {
+  display: block;
+  padding: 10px 4px 2px;
+  color: #554A3F;
+  font-family: Georgia, serif;
+  font-style: italic;
+  text-align: center;
+}
+
+.hero .button {
+  background: #F3B5B0;
+  color: #29241F;
+  transition: transform 0.25s ease;
+}
+
+.hero .button:hover {
+  transform: translateY(-3px) rotate(-1deg);
+}
+
+.project-card {
+  transition: transform 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px) rotate(-0.5deg);
+}
+
+@media (max-width: 700px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 38px 6%;
+  }
+
+  .hero-art {
+    max-width: 540px;
+  }
+}
